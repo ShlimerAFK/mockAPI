@@ -1,0 +1,13 @@
+.list_call{
+
+    width: fit-content;
+    height: fit-content;
+
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
