@@ -12,7 +12,7 @@ async function call_students_api(){
         console.log(data)
 
     } catch (error) {
-        console.log("error: ",error)
+        console.log(error)
     }
 }
 
