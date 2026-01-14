@@ -16,3 +16,4 @@ async function call_students_api(){
     }
 }
 
+call_students_api()
