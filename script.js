@@ -10,11 +10,12 @@ async function call_students_api(){
         let data = await response.json()
 
         console.log(data)
-        
-        l1.innerHTML += `<p> Id: ${data[1].id} </p>
-                        <p> Name: ${data[1].name} </p>
-                        <p> Email: ${data[1].email} </p>
-                        <p> Birthdate: ${data[1].birthdate} </p>`
+        for(i=0; i < data.length; i++){
+            l1.innerHTML += `<p> Id: ${data[i].id} </p>
+                            <p> Name: ${data[i].name} </p>
+                            <p> Email: ${data[i].email} </p>
+                            <p> Birthdate: ${data[i].birthdate} </p>`
+        }
 
     } catch (error) {
         console.log("error: ",error)
